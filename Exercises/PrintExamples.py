@@ -1,0 +1,50 @@
+a = input('Digite algo: ')
+print(type(a))
+print('so tem espaços?', a.isspace())
+print('é numerico?', a.isnumeric())
+print('pode ser impresso?', a.isprintable())
+print('é so letras?', a.isalpha())
+print('esta capitalizada?', a.isupper())
+##-fatiar frases##
+frase = 'curso em video python'
+print(frase[9::3])
+print(frase[13])
+print(frase[:8])
+print(frase[12:])
+#-lenth = len(frase)
+#-frase.count('o', 0, 13)
+#-frase.find('deo')
+#-frase.find('Android')
+#-'curso' in frase
+##-transformação frases##
+#_frase.replace('python','android')
+#-frase.upper()
+#-frase.lower()
+#-frase.capitalize()
+#-frase.title()
+#-frase.strip()
+#-frase.rstrip()
+#-frase.lstrip()
+##-divisão frases##
+#-frase.split()
+#   '-'.join(frase)
+frase = 'Curso em Vídeo Python'
+print(frase)
+frase = frase.replace('Python', 'Android')
+print(frase)
+print(frase.count('o'))
+print(frase.split())
+print(frase.upper().count('O'))
+print(len(frase))
+print(frase.replace('Python', 'Android'))
+print('Curso' in frase)
+print(frase.find('em'))
+print(frase.lower().find('vídeo'))
+frase = 'Curso em Vídeo Python'
+print(frase.split())
+print('-----------------------------------')
+dividido = frase.split()
+print(dividido[0])
+print(dividido[2][3])
+
+print(f'o rapaz chama se {nome}, tem {idade}') # python 3.6+, chama se fStrings
